@@ -183,12 +183,13 @@ html::-webkit-scrollbar-thumb {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: "TT Travels";
-  background: #e5e5e5;
+  font-family: "Manrope";
+  background: #F3F6F9;
 }
 
 .wrapper {
