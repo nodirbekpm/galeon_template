@@ -12,7 +12,6 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font -->
     <link rel="stylesheet" href="assets/fonts/font.css">
     <!-- Css -->
@@ -231,328 +230,136 @@
         </header>
 
         <!-- hero -->
-        <section class="hero">
+        <section class="hero page">
             <div class="container">
+
+                <!-- breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="index.html">Главная</a>
+                    <span>/</span>
+                    <a href="production.html" class="active">Дополнительные аксессуары</a>
+                </div>
+
                 <div class="main_title">
-                    Российское производство <br> ударопрочных кейсов <br>
-                    для критически важного <br> оборудования
+                    Производство <br>
+                    ударопрочных кейсов и контейнеров
                 </div>
 
                 <div class="sub_title">
-                    Комплексные решения от разработки до серийного выпуска по вашему техническому заданию
+                    Основа каждого нашего изделия - глубокое понимание физики процессов и внимание к деталям. Наши решения обеспечивают полную герметичность со степенью защиты IP67, оснащены автоматическим клапаном выравнивания давления и созданы из высокопрочных полимеров.
                 </div>
 
-                <a href="catalog.html" class="button">
-                    Смотреть каталог
-                </a>
-
-                <div class="information">
-                    <!-- info item -->
-                    <div class="info_item">
-                        <img src="assets/images/hero_info1.svg" alt="">
-                        <div class="text">Класс защиты IP65 и выше</div>
-                    </div>
-
-                    <!-- info item -->
-                    <div class="info_item">
-                        <img src="assets/images/hero_info2.svg" alt="">
-                        <div class="text">Мягкий поропласт</div>
-                    </div>
-
-                    <!-- info item -->
-                    <div class="info_item">
-                        <img src="assets/images/hero_info3.svg" alt="">
-                        <div class="text">Производятся в России</div>
-                    </div>
-                </div>
-
-                <a class="hero_link" href="#">
-                    
-                    <img src="assets/images/straight_arrow.svg" alt="">
-                    <span>Листайте вниз</span>
-                </a>
-                
-
-                <!-- Dots with tooltips -->
-                <div class="dot first">
-                    <div class="tooltip">Мягкий поропласт для <br> надежной фиксации груза</div>
-                </div>
-
-                <div class="dot second" >
-                    <div class="tooltip">Производятся в России</div>
-                </div>
-
-                <div class="dot third" >
-                    <div class="tooltip">Класс защиты IP67 и выше</div>
-                </div>
-
-                <div class="dot fourth" >
-                    <div class="tooltip">Созданы из высокопрочных полимеров</div>
+                <div  class="button  open-modal-btn">
+                    Обсудить проект
                 </div>
             </div>
         </section>
 
-        <!-- production -->
-        <section class="production">
+        <!-- order -->
+        <section class="order">
             <div class="container">
-                <!-- Swiper Container -->
-                <div class="swiper preproduction">
-                    <div class="section_title">
-                        Производственные возможности
-                    </div>
-                    <div class="swiper-wrapper">
-                        <!-- slide -->
-                        <a href="tool.html" class="swiper-slide">
-                            <div class="top">
-                                <img src="assets/images/production1.png" alt="">
-                            </div>
-                            <div class="bottom">
-                                <div class="title">
-                                    Производство кейсов и контейнеров
-                                </div>
-                                <div class="info">Разрабатываем и производим ударопрочные кейсы и контейнеры по индивидуальным техническим требованиям для любых отраслей и условий эксплуатации</div>
-                            </div>
-                        </a>
-                        
-                        <!-- slide -->
-                        <a href="tool.html#tool2" class="swiper-slide">
-                            <div class="top">
-                                <img src="assets/images/production2.png" alt="">
-                            </div>
-                            <div class="bottom">
-                                <div class="title">
-                                    Производство ложементов любой сложности
-                                </div>
-                                <div class="info">Гарантируем идеальную фиксацию и защиту каждого элемента. Проектируем и изготавливаем ложементы из различных материалов, точно повторяющие контуры вашего оборудования</div>
-                            </div>
-                        </a>
+                <div class="section_title">
+                    Производство любой сложности под заказ
+                </div>
+                <div class="sub_title">Мы предлагаем широкие возможности по адаптации и оснащению кейсов, позволяя создать изделие, идеально соответствующее вашим целям.</div>
 
-                        <!-- slide -->
-                        <a href="tool.html#tool3" class="swiper-slide">
-                            <div class="top">
-                                <img src="assets/images/production3.png" alt="">
-                            </div>
-                            <div class="bottom">
-                                <div class="title">
-                                    Кастомные MOLLE-панели
-                                </div>
-                                <div class="info">Обеспечиваем гибкость и функциональность внутреннего пространства. Разрабатываем и интегрируем MOLLE-панели для удобного и надежного крепления снаряжения</div>
-                            </div>
-                        </a>
-
-                        <!-- slide -->
-                        <a href="tool.html#tool4" class="swiper-slide">
-                            <div class="top">
-                                <img src="assets/images/production4.png" alt="">
-                            </div>
-                            <div class="bottom">
-                                <div class="title">
-                                    Интерфейсные (I/O) панели
-                                </div>
-                                <div class="info">Интегрируем оборудование во внешнюю среду. Проектируем и монтируем интерфейсные панели с любым набором разъемов, обеспечивая герметичность и удобство подключения.</div>
-                            </div>
-                        </a>
-
-                        <!-- slide -->
-                        <a href="tool.html#tool5" class="swiper-slide">
-                            <div class="top">
-                                <img src="assets/images/production5.png" alt="">
-                            </div>
-                            <div class="bottom">
-                                <div class="title">
-                                    Приборные панели, Конструктивные элементы из металла
-                                </div>
-                                <div class="info">Создаем готовые к работе изделия. Изготавливаем и монтируем приборные панели и конструктивные элементы из металла, превращая кейс в полноценный функциональный комплекс.</div>
-                            </div>
-                        </a>
-
-                        <!-- slide -->
-                        <a href="tool.html#tool6" class="swiper-slide">
-                            <div class="top">
-                                <img src="assets/images/production6.png" alt="">
-                            </div>
-                            <div class="bottom">
-                                <div class="title">
-                                    Пульты управления
-                                </div>
-                                <div class="info">Предоставляем полный контроль над вашими системами. Разрабатываем и интегрируем в защитные кейсы и шкафы эргономичные и надежные пульты управления для стационарного и мобильного использования.</div>
-                            </div>
-                        </a>
-
-                        <!-- slide -->
-                        <a href="tool.html#tool7" class="swiper-slide">
-                            <div class="top">
-                                <img src="assets/images/production7.png" alt="">
-                            </div>
-                            <div class="bottom">
-                                <div class="title">
-                                    Системы охлаждения и системы нагрева
-                                </div>
-                                <div class="info">Проектируем и устанавливаем активные и пассивные системы термостатирования для поддержания заданного режима.</div>
-                            </div>
-                        </a>
-
-                        <!-- slide -->
-                        <a href="tool.html#tool8" class="swiper-slide">
-                            <div class="top">
-                                <img src="assets/images/production8.png" alt="">
-                            </div>
-                            <div class="bottom">
-                                <div class="title">
-                                    Шкафы металлические и аксессуары для кейсов и панелей
-                                </div>
-                                <div class="info">Предлагаем решения для размещения и защиты аппаратуры. Производим телекоммуникационные и промышленные шкафы, а также необходимые аксессуары для их оснащения.</div>
-                            </div>
-                        </a>
+                <div class="order_row">
+                    <!-- order item -->
+                    <div class="order_item">
+                        <img src="assets/images/order1.svg" alt="">
+                        <div class="title">Выбор материала</div>
+                        <div class="info">Мы подбираем марку полимера не только по ударопрочности, но и по химической стойкости и весу.</div>
                     </div>
 
-                    <div class="navigation">
-                        <!-- Navigation buttons -->
-                        <div class=" swiper-button-prev navigation_item">
-                            <img src="assets/images/navigation_item_arrow.svg" alt="">
-                        </div>
-                        <div class=" swiper-button-next navigation_item">
-                            <img src="assets/images/navigation_item_arrow.svg" alt="">
-                        </div>
+                    <!-- order item -->
+                    <div class="order_item">
+                        <img src="assets/images/order2.svg" alt="">
+                        <div class="title">Нанесение логотипов и маркировки</div>
+                        <div class="info">Ваш бренд или техническая информация будут надежно нанесены на корпус. Мы используем методы трафаретной печати или объемных наклеек, которые обеспечивают высокую стойкость изображения к истиранию и внешним воздействиям.</div>
+                    </div>
+
+                    <!-- order item -->
+                    <div class="order_item">
+                        <img src="assets/images/order3.svg" alt="">
+                        <div class="title">Экранирование от электромагнитных помех (ЭМП/EMI)</div>
+                        <div class="info">Для защиты высокочувствительной электроники мы наносим на внутреннюю поверхность корпуса специализированное токопроводящее покрытие. Это создает клетку Фарадея, эффективно защищающую ваше оборудование </div>
+                    </div>
+
+                    <!-- order item -->
+                    <div class="order_item">
+                        <img src="assets/images/order4.svg" alt="">
+                        <div class="title">Дополнительная фурнитура и колесные системы</div>
+                        <div class="info">Кейс может быть оснащен различными типами ручек (включая телескопические), усиленными замками-защелками и надежными колесами для удобства транспортировки тяжелого оборудования.</div>
+                    </div>
+
+                    <!-- order item -->
+                    <div class="order_item">
+                        <img src="assets/images/order5.svg" alt="">
+                        <div class="title">Интеграция панельных рамок и крепежных элементов</div>
+                        <div class="info">Для легкой и надежной установки ваших приборных панелей мы можем интегрировать в корпус специальные панельные рамки. Также мы можем установить внутренние крепежные точки (боссы) в точном соответствии с вашими схемами.</div>
+                    </div>
+
+                    <!-- order item -->
+                    <div class="order_item">
+                        <img src="assets/images/order6.svg" alt="">
+                        <div class="title">Интеграция комплексных систем</div>
+                        <div class="info">Наше конструкторское бюро и производственные мощности позволяют реализовать проекты любой сложности, где стандартного решения недостаточно. Мы не просто дорабатываем кейс — мы создаем с нуля комплексное изделие.</div>
+                    </div>
+
+                    <!-- order item -->
+                    <div class="order_item">
+                        <a class="button open-modal-btn">
+                            Оставить заявку
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- products -->
-        <section class="products" id="products">
+        <!-- example -->
+        <section class="example">
             <div class="container">
-                <div class="top">
-                    <div class="section_title">Наша продукция</div>
-                    <a href="catalog.html" class="download">
-                        Смотреть каталог
-                    </a>
+                <div class="section_title">
+                    Примеры реализуемых <br> нами доработок:
                 </div>
 
-                <div class="product_row">
-                    <!-- product item -->
-                    <a href="catalog.html" class="product_item">
-                        <div class="title">Мини кейсы</div>
-                        <div class="link"><img src="assets/images/link_arrow.svg" alt=""></div>
-                    </a>
-
-                     <!-- product item -->
-                    <a href="catalog.html" class="product_item">
-                        <div class="title">Средние кейсы</div>
-                        <div class="link"><img src="assets/images/link_arrow.svg" alt=""></div>
-                    </a>
-
-                     <!-- product item -->
-                    <a href="catalog.html" class="product_item">
-                        <div class="title">Большие кейсы</div>
-                        <div  class="link"><img src="assets/images/link_arrow.svg" alt=""></div>
-                    </a>
-
-                     <!-- product item -->
-                    <a href="catalog.html" class="product_item">
-                        <div class="title">Длинные кейсы</div>
-                        <div class="link"><img src="assets/images/link_arrow.svg" alt=""></div>
-                    </a>
-
-                     <!-- product item -->
-                    <a href="catalog.html" class="product_item">
-                        <div class="title">Кейсы для ноутбуков</div>
-                        <div  class="link"><img src="assets/images/link_arrow.svg" alt=""></div>
-                    </a>
-
-                     <!-- product item -->
-                    <div class="product_item">
-                        <div>
-                            <div class="title">Контейнеры</div>
-                            <div class="info_row">
-                                <a href="#" class="info_item">Контейнеры СМС</a>
-                                <a href="#" class="info_item">Контейнеры ПСС</a>
-                                <a href="#" class="info_item">Рабочие мобильные места</a>
-                                <a href="#" class="info_item">Контейнеры RACK</a>
-                                <a href="#" class="info_item">Контейнеры СТС</a>
-                                <a href="#" class="info_item">Мобильный госпиталь</a>
-                            </div>
+                <div class="example_row">
+                    <!-- example item -->
+                    <div class="example_item">
+                        <img src="assets/images/example1.jpg" alt="">
+                        <div class="bottom">
+                            <div class="title">Кейсы с интегрированными приборными панелями:</div>
+                            <div class="info">Превращаем защитный кейс в полноценное рабочее место оператора или мобильный измерительный комплекс.</div>
                         </div>
-                        <a href="catalog.html"  class="link"><img src="assets/images/link_arrow.svg" alt=""></a>
+                    </div>
+
+                    <!-- example item -->
+                    <div class="example_item">
+                        <img src="assets/images/example2.jpg" alt="">
+                        <div class="bottom">
+                            <div class="title">Кейсы с утопленными панелями разъемов:</div>
+                            <div class="info">Обеспечиваем удобное и безопасное подключение оборудования, сохраняя герметичность и ударопрочность корпуса. Защитная крышка предотвращает повреждение интерфейсов при транспортировке.</div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
-        <!-- advantages -->
-        <div class="advantages" id="information">
-            <div class="container">
-                <a href="production.html" class="section_title">
-                    Преимущества производства
-                </a>
-                <div class="sub_title">
-                    Контролируем каждый этап создания вашей продукции. <br>
-                    Полный производственный цикл на собственных мощностях позволяет нам гарантировать качество, соблюдать сроки и брать на себя всю ответственность за конечный результат. 
-                </div>
-
-                <div class="button open-modal-btn">
-                    Узнать подробнее
-                </div>
-
-                <div class="advantages_row">
-                    <!-- advantage item -->
-                    <a href="production.html" class="advantage_item">
-                        <img src="assets/images/advantage1.svg" alt="">
-                        <div class="info_row">
-                            <div class="title">Многоуровневый контроль качества</div>
-                            <div class="info">Ваши изделия проходят строгую проверку: 5-этапное тестирование на вибростенде и ультразвуковой контроль сварных швов, обеспечивая их надежность в суровых условиях.</div>
-                        </div>
-                    </a>
-
-                    <!-- advantage item -->
-                    <a href="production.html"  class="advantage_item">
-                        <img src="assets/images/advantage2.svg" alt="">
-                        <div class="info_row">
-                            <div class="title">Собственное конструкторское бюро</div>
-                            <div class="info">Ваша задача получает точное инженерное воплощение: наши инженеры-конструкторы тесно сотрудничают с производством, находя оптимальные решения по материалам и интеграции систем.</div>
-                        </div>
-                    </a>
-
-                    <!-- advantage item -->
-                    <a href="production.html"  class="advantage_item">
-                        <img src="assets/images/advantage3.svg" alt="">
-                        <div class="info_row">
-                            <div class="title">Ответственность в «Едином окне»</div>
-                            <div class="info">Вы получаете одного ответственного исполнителя, который занимается всем: от ТЗ и проектирования до производства, интеграции и тестирования, что экономит ваше время и упрощает коммуникацию.</div>
-                        </div>
-                    </a>
-
-                    <!-- advantage item -->
-                    <a href="production.html"  class="advantage_item">
-                        <img src="assets/images/advantage4.svg" alt="">
-                        <div class="info_row">
-                            <div class="title">Опыт работы со сложными проектами</div>
-                            <div class="info">Нам доверяют ведущие предприятия промышленности, оборонного сектора и экстренных служб. Мы учитываем специфику работы с заказами, требующими соблюдения стандартов и конфиденциальности.</div>
-                        </div>
-                    </a>
-                </div>
-
-              
-            </div>
-        </div>
 
         <!-- application -->
-        <section class="application" >
+        <section class="application page" >
             <div class="container">
                 <div class="application_row">
                     <div class="left">
-                        <!-- <img src="assets/images/application_image.svg" alt=""> -->
                     </div>
                     <div class="right">
-                        <div class="section_title">Свяжитесь с нами</div>
+                        <div class="section_title">Ваша задача требует больше, чем производство кейсов?</div>
                         <div class="sub_title">
-                            Заполните форму, мы свяжемся и проконсультируем Вас в кратчайшие сроки
+                            Обсудите технические детали с нашими инженерами. Мы предложим решение, основанное на глубоком понимании технологий и материалов.
                         </div>
                         <form action="">
-                            <input type="text" required placeholder="Ваше Имя*">
+                            <input type="text" placeholder="Ваше Имя*">
                             <div class="input_block">
-                                <input required type="tel" id="phone" placeholder="+7 999 999 99 99*">
+                                <input type="tel" id="phone" placeholder="+7 999 999 99 99*">
                             </div>
                             <textarea name="" id="" placeholder="Комментарий"></textarea>
                             <button>Оставить заявку</button>
@@ -560,7 +367,7 @@
                             <!-- custom confirm -->
                             <div class="confirm">
                                 <label class="custom-checkbox">
-                                    <input required checked type="checkbox" id="confirm">
+                                    <input type="checkbox" id="confirm">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label for="confirm" class="text">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих <a  href="assets/documents/Personal_Data_Processing_Extended.pdf" target="_blank">персональных данных</a></label>
