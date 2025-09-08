@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font -->
     <link rel="stylesheet" href="assets/fonts/font.css">
     <!-- Css -->
@@ -77,6 +79,15 @@
                         <form class="header_search">
                             <button  class="search_link"></button>
                             <input type="text" name="search" placeholder="Поиск по сайту...">
+                            <!-- Suggestion dropdown -->
+                            <div class="search_suggestions">
+                                <ul>
+                                    <li><img class="Suggestion_image" src="assets/images/tool6.png" alt=""><a href="#">Товар 1</a></li>
+                                    <li><a href="#">Товар 2</a></li>
+                                    <li><a href="#">Новости о компании</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
                         </form>
 
                         <div class="header_icons">
@@ -636,6 +647,13 @@
             </div>
         </footer>
 
+            <button class="open-modal-btn-profile" data-modal="modal1">Open Modal 1</button>
+            <button class="open-modal-btn-profile" data-modal="modal2">Open Modal 2</button>
+            <button class="open-modal-btn-profile" data-modal="modal3">Open Modal 3</button>
+            <button class="open-modal-btn-profile" data-modal="modal4">Open Modal 4</button>
+            <button class="open-modal-btn-profile" data-modal="modal5">Open Modal 5</button>
+            <button class="open-modal-btn-profile" data-modal="modal6">Open Modal 6</button>
+
     </div>
 
     <!-- Cookie Modal -->
@@ -689,6 +707,244 @@
            <form class="header_search">
                 <button  class="search_link"></button>
                 <input type="text" name="search" placeholder="Поиск по сайту...">
+                                <!-- Suggestion dropdown -->
+                                <div class="search_suggestions">
+                                    <ul>
+                                        <li><img class="Suggestion_image" src="assets/images/tool6.png" alt=""><a href="#">Товар 1</a></li>
+                                        <li><a href="#">Товар 2</a></li>
+                                        <li><a href="#">Новости о компании</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <!-- login/register modal -->
+    <div class="modal-overlay-profile" id="modal1">
+        <div class="modal" id="modalBox2">
+            <button class="close-btn" id="profileModalClose"><img src="assets/images/modal_close_icon.svg" alt=""></button>
+
+            <div class="login_blog tab_blog active">
+                <div class="section_title">Вход в личный кабинет</div>
+                <div class="sub_title">
+                    Введите ваш логин и пароль для входа 
+                </div>
+            </div>
+
+            <div class="register_blog tab_blog">
+                <div class="section_title">Регистрация</div>
+                <div class="sub_title">
+                    Пожалуйста, заполните необходимые поля 
+                </div>
+            </div>
+
+            <div class="tab_buttons">
+                <div class="tab_item login active" onclick="openTab('login',this)">Войти</div>
+                <div class="tab_item register" onclick="openTab('register',this)">Регистрация</div>
+            </div>
+
+            <form action="" class="form-register form_item" id="form-register">
+                <input type="text" required placeholder="Имя">
+                <input type="email" required placeholder="E-mail">
+
+                <div class="password-wrapper">
+                    <input required type="password" placeholder="Новый пароль" class="password-input">
+                    <span class="material-icons toggle-password">visibility_off</span>
+                </div>
+
+                <div class="password-wrapper">
+                    <input required type="password" placeholder="Повторите пароль" class="password-input">
+                    <span class="material-icons toggle-password">visibility_off</span>
+                </div>
+
+                <button>Зарегистрироваться</button>
+
+                <div class="message">Уже есть аккаунт? <span onclick="openTab('login',this)"> Войти</span></div>
+
+                <!-- custom confirm -->
+                <div class="confirm">
+                    <label class="custom-checkbox">
+                        <input required checked type="checkbox" id="confirmprofile">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="confirmprofile" class="text">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих <a  href="assets/documents/Personal_Data_Processing_Extended.pdf" target="_blank">персональных данных</a></label>
+                </div>
+            </form>
+
+            <form action="" class="form-login form_item active" id="form-login">
+                <input required type="email" placeholder="E-mail">
+
+                <div class="password-wrapper">
+                    <input required type="password" placeholder="Пароль" class="password-input">
+                    <span class="material-icons toggle-password">visibility_off</span>
+                </div>
+        
+                <button>Войти</button>
+
+                <div class="message">Забыли пароль? <span class="open-modal-btn-profile" data-modal="modal2">Восстановить</span></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- password reset modal -->
+    <div class="modal-overlay-profile" id="modal2">
+        <div class="modal" id="modalBox2">
+            <button class="close-btn" id="profileModalClose"><img src="assets/images/modal_close_icon.svg" alt=""></button>
+
+            <div class="section_title">Восстановление пароля</div>
+            <div class="sub_title">
+                Введите email, который вы использовали при регистрации, и мы отправим вам ссылку для сброса пароля. 
+            </div>
+
+
+            <form action="" class="form-register ">
+                <input required type="email" placeholder="E-mail">
+
+                <button type="submit">Отправить ссылку</button>
+
+                <div  class="back_link open-modal-btn-profile" data-modal="modal1">
+                    <img src="assets/images/navigation_item_arrow.svg" alt="">
+                    <span>Вернуться ко входу</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- check the email modal -->
+    <div class="modal-overlay-profile" id="modal3">
+        <div class="modal" id="modalBox2">
+            <button class="close-btn" id="profileModalClose"><img src="assets/images/modal_close_icon.svg" alt=""></button>
+
+            <div class="section_title">Проверьте почту</div>
+
+            <div class="img_container">
+                <img src="assets/images/modal_message_send_iocn.svg" alt="">
+            </div>
+
+            <div class="sub_title">
+                Мы отправили инструкцию по восстановлению пароля на адрес <span>[email пользователя]</span>.
+            </div>
+        </div>
+    </div>
+
+    <!-- confirm the email modal -->
+    <div class="modal-overlay-profile" id="modal4">
+        <div class="modal" id="modalBox2">
+            <button class="close-btn" id="profileModalClose"><img src="assets/images/modal_close_icon.svg" alt=""></button>
+
+            <div class="section_title">Проверьте почту</div>
+
+            <div class="img_container">
+                <img src="assets/images/modal_message_send_iocn.svg" alt="">
+            </div>
+
+            <div class="sub_title">
+                Мы отправили инструкцию по восстановлению пароля на адрес <span>[email пользователя]</span>. <br> Пожалуйста, перейдите по ней, чтобы активировать ваш аккаунт.
+            </div>
+
+            <form action="">
+                <button style="width: auto;">Подтвердить</button>
+            </form>
+
+            <div class="message" style="margin-bottom: 0;">
+                Не пришло письмо? Проверьте папку «спам»
+            </div>
+        </div>
+    </div>
+
+    <!-- setting a new password modal -->
+    <div class="modal-overlay-profile" id="modal5">
+        <div class="modal" id="modalBox2">
+            <button class="close-btn" id="profileModalClose"><img src="assets/images/modal_close_icon.svg" alt=""></button>
+
+            <div class="section_title">Создайте новый пароль</div>
+
+            <form action="" class="form-register ">
+                <div class="password-wrapper">
+                    <input required type="password" placeholder="Пароль" class="password-input">
+                    <span class="material-icons toggle-password">visibility_off</span>
+                </div>
+
+                <div class="password-wrapper">
+                    <input required type="password" placeholder="Повторите пароль" class="password-input">
+                    <span class="material-icons toggle-password">visibility_off</span>
+                </div>
+
+                <button>Сохранить пароль</button>
+
+                <div class="message">Уже есть аккаунт? <span class="open-modal-btn-profile" data-modal="modal1"> Войти</span></div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- login/register with the message:Пароль успешно изменен! modal -->
+    <div class="modal-overlay-profile" id="modal6">
+        <div class="modal" id="modalBox2">
+            <button class="close-btn" id="profileModalClose"><img src="assets/images/modal_close_icon.svg" alt=""></button>
+
+            <div class="login_blog tab_blog active">
+                <div class="section_title">Вход в личный кабинет</div>
+                <div class="sub_title">
+                    Введите ваш логин и пароль для входа 
+                </div>
+            </div>
+
+            <div class="register_blog tab_blog">
+                <div class="section_title">Регистрация</div>
+                <div class="sub_title">
+                    Пожалуйста, заполните необходимые поля 
+                </div>
+            </div>
+
+            <div class="tab_buttons">
+                <div class="tab_item login active" onclick="openTab('login',this)">Войти</div>
+                <div class="tab_item register" onclick="openTab('register',this)">Регистрация</div>
+            </div>
+
+            <div class="message second">Пароль успешно изменен!</div>
+
+            <form action="" class="form-register form_item" id="form-register">
+                <input type="text" required placeholder="Имя">
+                <input type="email" required placeholder="E-mail">
+
+                <div class="password-wrapper">
+                    <input required type="password" placeholder="Новый пароль" class="password-input">
+                    <span class="material-icons toggle-password">visibility_off</span>
+                </div>
+
+                <div class="password-wrapper">
+                    <input required type="password" placeholder="Повторите пароль" class="password-input">
+                    <span class="material-icons toggle-password">visibility_off</span>
+                </div>
+
+                <button>Зарегистрироваться</button>
+
+                <div class="message">Уже есть аккаунт? <span onclick="openTab('login',this)"> Войти</span></div>
+
+                <!-- custom confirm -->
+                <div class="confirm">
+                    <label class="custom-checkbox">
+                        <input required checked type="checkbox" id="confirmprofile">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="confirmprofile" class="text">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих <a  href="assets/documents/Personal_Data_Processing_Extended.pdf" target="_blank">персональных данных</a></label>
+                </div>
+            </form>
+
+            <form action="" class="form-login form_item active" id="form-login">
+                <input required type="email" placeholder="E-mail">
+
+                <div class="password-wrapper">
+                    <input required type="password" placeholder="Пароль" class="password-input">
+                    <span class="material-icons toggle-password">visibility_off</span>
+                </div>
+        
+                <button>Войти</button>
+
+                <div class="message">Забыли пароль? <span class="open-modal-btn-profile" data-modal="modal2">Восстановить</span></div>
             </form>
         </div>
     </div>
